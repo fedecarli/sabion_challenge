@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  function myFunction(list) {
+      var sorted_arr = arr.slice().sort();
+      console.log(sorted_arr);
+      var results = [];
+      for (var i = 0; i < sorted_arr.length - 1; i++) {
+          if (sorted_arr[i + 1] == sorted_arr[i]) {
+              delete sorted_arr[i];
+              delete sorted_arr[i + 1];
+          }
+      }
+      console.log(sorted_arr);
+      document.getElementById('demo').innerHTML = sorted_arr;
+  }
+</script>
+
+</body>
+</html>
